@@ -1,0 +1,27 @@
+!DOCTYPE html>
+<html>file:///data/user/0/com.foxdebug.acodefree/files/public/Index.html
+<head>
+  <title>Security Demo</title>
+</head>
+<body>
+
+  <h2>Security Awareness Demo</h2>
+
+  <form onsubmit="demo(event)">
+    <input type="text" placeholder="Demo username">
+    <input type="password" placeholder="Demo password">
+    <button type="submit">Login</button>
+  </form>
+
+  <p id="message"></p>
+
+  <script>
+    function demo(event) {
+      event.preventDefault();
+      document.getElementById("message").innerText =
+        "Demo only — no credentials were collected.";
+    }
+  </script>
+
+</body>
+</html>
